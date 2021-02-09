@@ -1,0 +1,40 @@
+.form {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  background: rgb(4, 52, 70);
+}
+
+.form > form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10vw;
+  height: 50vh;
+  justify-content: space-evenly;
+  background: white;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.form input {
+  outline-width: 0;
+  height: 20px;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.form__btn {
+  background: green;
+  border: none;
+  outline: 0;
+  height: 30px;
+  color: white;
+  transition: 0.5s;
+}
+.form__btn:hover {
+  background: rgb(15, 153, 75);
+}
