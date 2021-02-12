@@ -7,7 +7,11 @@ const ENDPOINT = "http://localhost:7000";
 function App() {
   const [response, setResponse] = useState({});
   useEffect(() => {
-    const socket = socketIOClient(ENDPOINT, { transports: ["websocket"] });
+    const socket = socketIOClient(
+      ENDPOINT,
+      { transports: ["websocket"] },
+      { reconnection: false }
+    );
     socket.on("newMessage", data => {
       setResponse(data);
     });
